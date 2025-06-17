@@ -1,4 +1,5 @@
-**Langkah-langkah membuat backend CodeIgniter 4 untuk studi kasus Perpustakaan**
+Berikut ini adalah README backend **CodeIgniter 4** untuk **kasus Perpustakaan** dengan entitas `buku` dan `peminjaman` (tanpa relasi), disusun sesuai struktur yang Anda minta:
+
 ---
 
 ````markdown
@@ -245,3 +246,5 @@ Politeknik Negeri Cilacap
 ````
 
 ---
+
+Jika Anda ingin saya bantu membuat ZIP file proyek backend `backend_perpustakaan`, tinggal beri tahu saja, saya siapkan untuk Anda.
