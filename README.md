@@ -1,8 +1,7 @@
-Berikut ini adalah README backend **CodeIgniter 4** untuk **kasus Perpustakaan** dengan entitas `buku` dan `peminjaman` (tanpa relasi), disusun sesuai struktur yang Anda minta:
+**Langkah-langkah membuat backend CodeIgniter 4 untuk studi kasus Rumah Sakit**
 
 ---
 
-````markdown
 # 📚 Backend Perpustakaan - CodeIgniter 4
 
 Repositori ini berisi proyek backend REST API menggunakan **CodeIgniter 4** untuk sistem informasi perpustakaan dengan dua entitas utama: `buku` dan `peminjaman`.
@@ -14,10 +13,11 @@ Repositori ini berisi proyek backend REST API menggunakan **CodeIgniter 4** untu
 ### 1. Persiapan Awal
 
 Pastikan perangkat Anda telah terinstal:
-- PHP >= 8.1
-- Composer
-- MySQL/MariaDB
-- Git
+
+* PHP >= 8.1
+* Composer
+* MySQL/MariaDB
+* Git
 
 ### 2. Buat Proyek CodeIgniter 4 Baru
 
@@ -151,8 +151,8 @@ php spark serve
 
 Akses melalui browser atau Postman:
 
-- [http://localhost:8080/buku](http://localhost:8080/buku)
-- [http://localhost:8080/peminjaman](http://localhost:8080/peminjaman)
+* [http://localhost:8080/buku](http://localhost:8080/buku)
+* [http://localhost:8080/peminjaman](http://localhost:8080/peminjaman)
 
 ---
 
@@ -160,20 +160,26 @@ Akses melalui browser atau Postman:
 
 Buat Collection Postman:
 
-- Nama: `uas_buku` dan `uas_peminjaman`
-- Tambahkan endpoint:
+* Nama: `uas_buku` dan `uas_peminjaman`
+* Tambahkan endpoint:
 
-  - GET `/buku` – ambil semua buku
-  - POST `/buku` – tambah buku
-  - PUT `/buku/{id}` – ubah buku
-  - DELETE `/buku/{id}` – hapus buku
+  * GET `/buku` – ambil semua buku
 
-  - GET `/peminjaman` – ambil semua peminjaman
-  - POST `/peminjaman` – tambah data peminjaman
-  - PUT `/peminjaman/{id}` – ubah peminjaman
-  - DELETE `/peminjaman/{id}` – hapus peminjaman
+  * POST `/buku` – tambah buku
 
-Gunakan body JSON saat POST dan PUT. Contoh:
+  * PUT `/buku/{id}` – ubah buku
+
+  * DELETE `/buku/{id}` – hapus buku
+
+  * GET `/peminjaman` – ambil semua peminjaman
+
+  * POST `/peminjaman` – tambah peminjaman
+
+  * PUT `/peminjaman/{id}` – ubah peminjaman
+
+  * DELETE `/peminjaman/{id}` – hapus peminjaman
+
+Contoh body JSON untuk `POST`/`PUT`:
 
 ```json
 {
@@ -190,23 +196,23 @@ Gunakan body JSON saat POST dan PUT. Contoh:
 
 ### 🔹 Buku
 
-| Method | Endpoint     | Deskripsi           |
-|--------|--------------|---------------------|
-| GET    | `/buku`      | Ambil semua buku    |
-| GET    | `/buku/{id}` | Detail buku         |
-| POST   | `/buku`      | Tambah buku         |
-| PUT    | `/buku/{id}` | Ubah data buku      |
-| DELETE | `/buku/{id}` | Hapus data buku     |
+| Method | Endpoint     | Deskripsi        |
+| ------ | ------------ | ---------------- |
+| GET    | `/buku`      | Ambil semua buku |
+| GET    | `/buku/{id}` | Detail buku      |
+| POST   | `/buku`      | Tambah buku      |
+| PUT    | `/buku/{id}` | Ubah data buku   |
+| DELETE | `/buku/{id}` | Hapus data buku  |
 
 ### 🔹 Peminjaman
 
-| Method | Endpoint           | Deskripsi               |
-|--------|--------------------|--------------------------|
-| GET    | `/peminjaman`      | Ambil semua peminjaman   |
-| GET    | `/peminjaman/{id}` | Detail peminjaman        |
-| POST   | `/peminjaman`      | Tambah peminjaman        |
-| PUT    | `/peminjaman/{id}` | Ubah data peminjaman     |
-| DELETE | `/peminjaman/{id}` | Hapus data peminjaman    |
+| Method | Endpoint           | Deskripsi              |
+| ------ | ------------------ | ---------------------- |
+| GET    | `/peminjaman`      | Ambil semua peminjaman |
+| GET    | `/peminjaman/{id}` | Detail peminjaman      |
+| POST   | `/peminjaman`      | Tambah peminjaman      |
+| PUT    | `/peminjaman/{id}` | Ubah data peminjaman   |
+| DELETE | `/peminjaman/{id}` | Hapus data peminjaman  |
 
 ---
 
@@ -233,18 +239,15 @@ backend_perpustakaan/
 
 ## 💡 Catatan Tambahan
 
-- Pastikan database MySQL sudah berjalan sebelum menjalankan `php spark serve`.
-- Gunakan perintah `php spark routes` untuk melihat daftar routing aktif.
+* Pastikan MySQL berjalan sebelum menjalankan `php spark serve`
+* Gunakan `php spark routes` untuk melihat route aktif
 
 ---
 
 ## 👨‍💻 Dibuat oleh
 
-**Prih Diantono Abda’u, M.Kom**  
-UAS Praktikum Pemrograman Berbasis Framework – Genap 2024/2025  
+**Prih Diantono Abda’u, M.Kom**
+UAS Praktikum Pemrograman Berbasis Framework – Genap 2024/2025
 Politeknik Negeri Cilacap
-````
 
 ---
-
-Jika Anda ingin saya bantu membuat ZIP file proyek backend `backend_perpustakaan`, tinggal beri tahu saja, saya siapkan untuk Anda.
